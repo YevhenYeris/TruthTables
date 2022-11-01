@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_margin="50dp"
+        android:src="@drawable/me"
+        android:contentDescription="Me"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:text="Виконав студент групи ТТП-41\nЄріс Євген"/>
+
+    <Button
+        android:id="@+id/backHome"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Назад">
+    </Button>
+</LinearLayout>

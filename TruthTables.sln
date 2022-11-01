@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31624.102
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TruthTables", "TruthTables\TruthTables.csproj", "{D6A70310-39B5-4DF7-AD3F-62201090D3EA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TruthTablesLib", "TruthTablesLib\TruthTablesLib.csproj", "{ECE0BD05-EBCA-4FE6-8196-C995B3634CFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TruthTableApp", "TruthTableApp\TruthTableApp.csproj", "{537844D9-710B-4604-A8B1-2BC9321BBF5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +11,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D6A70310-39B5-4DF7-AD3F-62201090D3EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6A70310-39B5-4DF7-AD3F-62201090D3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6A70310-39B5-4DF7-AD3F-62201090D3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6A70310-39B5-4DF7-AD3F-62201090D3EA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ECE0BD05-EBCA-4FE6-8196-C995B3634CFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ECE0BD05-EBCA-4FE6-8196-C995B3634CFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ECE0BD05-EBCA-4FE6-8196-C995B3634CFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ECE0BD05-EBCA-4FE6-8196-C995B3634CFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{537844D9-710B-4604-A8B1-2BC9321BBF5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{537844D9-710B-4604-A8B1-2BC9321BBF5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{537844D9-710B-4604-A8B1-2BC9321BBF5A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{537844D9-710B-4604-A8B1-2BC9321BBF5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{537844D9-710B-4604-A8B1-2BC9321BBF5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{537844D9-710B-4604-A8B1-2BC9321BBF5A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

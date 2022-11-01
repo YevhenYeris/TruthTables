@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TruthTableApp</string>
+    <string name="action_info">Про автора</string>
+    <string name="exec">Формула виконувана</string>
+    <string name="not_exec">Формула невиконувана</string>
+    <string name="eq">Формула є тотожністю</string>
+    <string name="not_eq">Формула не є тотожністю</string>
+    <string name="import_btn">Імпорт</string>
+    <string name="export_btn">Експорт</string>
+    <string name="nothing_selected">Формулу не обрано</string>
+    <string name="show_table">Показати таблицю істинності</string>
+</resources>
