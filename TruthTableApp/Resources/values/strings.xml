@@ -9,4 +9,5 @@
     <string name="export_btn">Експорт</string>
     <string name="nothing_selected">Формулу не обрано</string>
     <string name="show_table">Показати таблицю істинності</string>
+    <string name="help_text">and - кон\'юнкція\nor - диз\'юнкція\nnot - заперечення\n-> - імплікація\n&lt;-> - еквіваленція\nxor - додавання за модулем два</string>
 </resources>

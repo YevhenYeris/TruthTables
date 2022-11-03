@@ -34,7 +34,7 @@ namespace TruthTableApp
     public class MainActivity : AppCompatActivity
     {
         public event EventHandler<FormulaCalculatedEventArgs> FormulaCalculated;
-        private readonly string Nothing = "Nothing selected";
+        private readonly string Nothing = "Обрати формулу";
 
         public static TruthTable TruthTable { get; set; }
 
@@ -53,17 +53,6 @@ namespace TruthTableApp
             {
                 Intent nextActivity = new Intent(this, typeof(ShowTableActivity));
                 StartActivity(nextActivity);
-                //var layoutMain = FindViewById<View>(Resource.Id.layout_main);
-                //layoutMain.Visibility = ViewStates.Gone;
-                //var layoutTable = FindViewById<View>(Resource.Id.layout_table);
-                //layoutTable.Visibility = ViewStates.Visible;
-                //var backBtn = FindViewById<Button>(Resource.Id.btn_back);
-                //backBtn.Visibility = ViewStates.Visible;
-
-                //TODO: Set view to correct size, add back button to scroll(create new, add a separate method for mutual back onclick)
-
-                //var drawing = FindViewById(Resource.Id.layout_table);
-                //DrawTruthTable(TruthTable);
             };
 
 
@@ -200,9 +189,8 @@ namespace TruthTableApp
 
         private void FabOnClick(object sender, EventArgs eventArgs)
         {
-            View view = (View) sender;
-            Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
-                .SetAction("Action", (View.IOnClickListener)null).Show();
+            Intent nextActivity = new Intent(this, typeof(HelpActivity));
+            StartActivity(nextActivity);
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
@@ -218,6 +206,8 @@ namespace TruthTableApp
             {
                 return false;
             }
+
+            formula = formula.Trim();
             
             try
             {
@@ -228,6 +218,15 @@ namespace TruthTableApp
                     alltext = reader.ReadToEnd();
                 }
                 file.Close();
+                var formulas = alltext.Split("\n");
+
+                if (formulas.Contains(formula))
+                {
+                    View view = FindViewById<Spinner>(Resource.Id.spinner_formulas);
+                    Snackbar.Make(view, "Формулу уже додано", Snackbar.LengthLong)
+                        .SetAction("Action", (View.IOnClickListener)null).Show();
+                    return false;
+                }
 
                 file = OpenFileOutput("formulas", Android.Content.FileCreationMode.Private);
                 using (var writer = new StreamWriter(file))
